@@ -1,0 +1,293 @@
+/*LOGIN PAGE UI
+CODED AND DESIGNED BY RITEK ROUNAK.*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Roboto';
+	outline: none;
+	border: none;
+}
+
+html,
+body {
+	height: 100%;
+	background: #0a0a0a;
+}
+
+.align {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 8px;
+}
+
+.logo {
+	width: 250px;
+}
+
+.card {
+	margin-top: 28px;
+	height: 100%;
+	max-height: 446px;
+	width: 396px;
+	background: #121212;
+	border: 1px solid #373737;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: max-height 0.2s;
+}
+
+.extend {
+	max-height: 480px;
+}
+
+.head {
+	width: 100%;
+	display: flex;
+	height: 72px;
+	border-bottom: 1px solid #373737;
+	justify-content: space-between;
+}
+
+.head a {
+	height: 100%;
+	padding: 0 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(140, 140, 140);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.head .selected {
+	position: relative;
+	color: #00ff5c;
+	font-weight: 700;
+}
+
+.head .selected:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	height: 5px;
+	width: 100%;
+	background: #00ff5c;
+	border-radius: 99px 99px 0 0;
+}
+
+.tabs {
+	height: calc(100% - 72px);
+	display: flex;
+}
+
+form {
+	width: 100%;
+	height: 100%;
+	flex-shrink: 0;
+	padding: 44px 38px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	right: 0;
+	transition: right 0.2s;
+}
+
+.extend form {
+	right: 100%;
+}
+
+.inputs {
+	width: 100%;
+	padding-top: 6px;
+}
+
+.input {
+	position: relative;
+	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.input input {
+	width: 100%;
+	font-size: 17px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	padding: 16px 18px 16px 51px;
+	color: rgb(220, 220, 220);
+}
+
+.input img {
+	width: 16px;
+	position: absolute;
+	left: 19px;
+}
+
+.checkbox {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.checkbox span {
+	display: flex;
+	align-items: center;
+	color: rgb(110, 110, 110);
+	font-size: 16px;
+	user-select: none;
+}
+
+.checkbox span:before {
+	content: '';
+	width: 22px;
+	height: 22px;
+	border-radius: 6px;
+	margin-right: 16px;
+	background-color: #1c1c1c;
+}
+
+.checkbox:hover input ~ span:before {
+	background-color: rgb(50, 50, 50);
+}
+
+.checkbox input:checked ~ span:before {
+	background-image: url(../img/checked.png);
+	background-size: cover;
+}
+.card button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background: #121212;
+	position: relative;
+	display: inline-block;
+	padding: 25px 30px;
+	margin: 10px 0;
+	color: #00ff5c;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+}
+
+.card button:nth-child(1) {
+	filter: hue-rotate(290deg);
+}
+
+.card button:nth-child(3) {
+	filter: hue-rotate(110deg);
+}
+
+.card button:hover {
+	background: #00ff5c;
+	color: #050801;
+	box-shadow: 0 0 5px #00ff5c, 0 0 25px #00ff5c, 0 0 50px #00ff5c, 0 0 200px #00ff5c;
+}
+
+.card button span {
+	position: absolute;
+	display: block;
+}
+
+.card button span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #00ff5c);
+	animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		left: -100%;
+	}
+	50%,
+	100% {
+		left: 100%;
+	}
+}
+
+.card button span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #00ff5c);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+	0% {
+		top: -100%;
+	}
+	50%,
+	100% {
+		top: 100%;
+	}
+}
+
+.card button span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #00ff5c);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+	0% {
+		right: -100%;
+	}
+	50%,
+	100% {
+		right: 100%;
+	}
+}
+
+.card button span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #00ff5c);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+	0% {
+		bottom: -100%;
+	}
+	50%,
+	100% {
+		bottom: 100%;
+	}
+}
+/*LOGIN PAGE UI
+CODED AND DESIGNED BY RITEK ROUNAK.*/
+

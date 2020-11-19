@@ -3,8 +3,8 @@
 LOGIN PAGE
 
 ## DEMO PICTURES
-<img src='https://raw.githubusercontent.com/RITEKROUNAK/LOGIN_UI/main/demo/login_screen.png?token=APIUTEMC5QTSWS6Z72NU2RK7X72X4' width="30%" align="left">
-<img src='https://raw.githubusercontent.com/RITEKROUNAK/LOGIN_UI/main/demo/register_screen.png?token=APIUTEIESXKNWBMBFUELZCC7X73BO' width="640" height="480">
+<img src='https://raw.githubusercontent.com/RITEKROUNAK/LOGIN_UI/main/demo/login_screen.png?token=APIUTEMC5QTSWS6Z72NU2RK7X72X4' width="480" align="left"height="640">
+<img src='https://raw.githubusercontent.com/RITEKROUNAK/LOGIN_UI/main/demo/register_screen.png?token=APIUTEIESXKNWBMBFUELZCC7X73BO' width="480" height="640">
 
 ## Usage
 
